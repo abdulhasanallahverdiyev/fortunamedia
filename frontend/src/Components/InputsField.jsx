@@ -27,7 +27,7 @@ const InputsField = () => {
         whycontactus: ""
     }
     const [state, setState] = useState(initialState)
-    const url = `http://164.90.163.43/core-api`
+    const url = `http://165.22.79.92/core-api`
     const postData = async () => {
         if (!state.first_name || !state.last_name || !state.email || !state.phone_number) return;
         await axios.post(`${url}/contact/`, state);

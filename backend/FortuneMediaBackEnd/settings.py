@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-al)3emz@@%ihqt3d8*7rgi_8(60q-&k_1d%#49_k$(h^adqtes
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['164.90.163.43']
+ALLOWED_HOSTS = ['165.22.79.92']
 
 
 # Application definition
@@ -84,13 +84,22 @@ WSGI_APPLICATION = 'FortuneMediaBackEnd.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "fortunadb",
+        "USER": "fortunauser",
+        "PASSWORD": "fortuna2023!",
+        "HOST": "localhost",
+        "PORT": "",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
