@@ -1,0 +1,113 @@
+.count_section {
+    background: #344955;
+    padding: 50px 0;
+    margin-top: 30px;
+
+    .row {
+        justify-content: center;
+
+        .count_content {
+            text-align: center;
+
+            .count {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            p{
+                margin-top: 10px;
+                font-size: 30px;
+                color: #fff;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .count_section {
+        padding: 40px 0;
+        .row {
+            .count_content {
+                margin-bottom: 40px;
+                .count {
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: 25px;
+                    color: #fff;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+                
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:992px) {
+    .count_section {
+        padding: 40px 0;
+
+        .row {
+            .count_content {
+                margin-bottom: 40px;
+                .count {
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: 30px;
+                    color: #fff;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+                
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:768px) {
+    .count_section {
+        padding: 40px 0;
+        .row {
+            .count_content {
+                margin-bottom: 40px;
+                .count {
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 28px;
+                }
+                
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:576px) {
+    .count_section {
+        padding: 40px 0;
+        .row {
+            .count_content {
+                margin-bottom: 40px;
+                .count {
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 22px;
+                }
+                
+            }
+        }
+    }
+    
+}

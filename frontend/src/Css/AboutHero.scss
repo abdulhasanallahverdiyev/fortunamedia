@@ -1,0 +1,149 @@
+.about_hero {
+    padding: 40px 0;
+
+    .row {
+        justify-content: space-between;
+
+        .about_hero_content {
+            h2 {
+                font-size: 40px;
+                font-weight: 600;
+                color: #344955;
+                line-height: 70px;
+            }
+
+            p {
+                margin-top: 40px;
+                font-size: 20px;
+                line-height: 30px;
+                color: #1a1919;
+            }
+        }
+
+        .about_hero_image {
+            border-radius: 10px;
+            height: 400px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .about_hero {
+        padding: 40px 0;
+
+        .row {
+            justify-content: space-between;
+
+            .about_hero_content {
+                h2 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .about_hero_image {
+                height: 400px;
+
+                img {
+                    border: 1px solid #ddd;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .about_hero {
+        padding: 40px 0;
+
+        .row {
+            justify-content: center;
+
+            .about_hero_content {
+                h2 {
+                    text-align: center;
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .about_hero_image {
+                margin-top: 25px;
+                height: 350px;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .about_hero {
+        padding: 40px 0;
+
+        .row {
+            justify-content: center;
+
+            .about_hero_content {
+                h2 {
+                    text-align: center;
+                    font-size: 35px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .about_hero_image {
+                margin-top: 25px;
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .about_hero {
+        padding: 10px 0;
+
+        .row {
+            justify-content: center;
+
+            .about_hero_content {
+                h2 {
+                    text-align: center;
+                    font-size: 30px;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-size: 14px;
+                    text-align: justify;
+                }
+            }
+
+            .about_hero_image {
+                margin-top: 25px;
+                height: 240px;
+            }
+        }
+    }
+}

@@ -1,0 +1,205 @@
+.pakets_section {
+    padding: 4em 0;
+    background-color: #fafafa;
+
+    .pakets_title {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h4 {
+            padding: 20px 0;
+            font-size: 40px;
+            line-height: 50px;
+            color: #2A2A2A;
+            text-transform: capitalize;
+        }
+    }
+
+    .row {
+        justify-content: center;
+
+        .pakets {
+            padding: 30px 0;
+            background: #fff;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            .text_center {
+                text-align: center;
+
+                .heading {
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: rgba(0, 0, 0, 0.3);
+                    margin-bottom: 0.5rem;
+                }
+
+                .price {
+                    display: block;
+
+                    sup {
+                        font-size: 20px;
+                        top: -1em;
+                        color: #000;
+                    }
+
+                    .number {
+                        font-size: 50px;
+                        font-weight: 700;
+                        color: #000;
+                    }
+
+                    small {
+                        font-size: 16px;
+                    }
+                }
+
+                .excerpt {
+                    font-size: 16px;
+                    font-weight: normal;
+                    margin-bottom: 1rem;
+                }
+
+                .pricing_text {
+                    margin-bottom: 1.5rem;
+                    padding: 0 20px;
+                    height: 350px;
+                    overflow-y: auto;
+                    &::-webkit-scrollbar {
+                        width: 2px;
+                      }
+                      
+                      &::-webkit-scrollbar-track {
+                        background: #f1f1f1;
+                      }
+                      
+                      &::-webkit-scrollbar-thumb {
+                        background: #ddd;
+                      }
+                      
+                      &::-webkit-scrollbar-thumb:hover {
+                        background: #555;
+                      }
+                    li {
+                        margin-bottom: 10px;
+                        text-align: center;
+                        padding: 10px 0;
+                        border-bottom: 1px solid #ddd;
+                        p{
+                            color: #585757;
+                            font-size: 14px;
+                        }
+
+                    }
+                }
+
+                a {
+                    max-width: 80%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    background: #6927ff;
+                    border: 1px solid #6927ff;
+                    color: #fff;
+                    box-shadow: 0px 15px 30px -12px rgba(0, 0, 0, 0.2);
+                    margin:5px auto;
+                    display: block;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .pakets_section {
+
+        .pakets_title {
+            h4 {
+                font-size: 40px;
+            }
+        }
+
+        .row {
+            .pakets {
+                .text_center {
+                    .excerpt {
+                        font-size: 14px;
+                    }
+
+                    .pricing_text {
+                        margin-bottom: 1.5rem;
+
+                        li {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    a {
+                        padding: 8px 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .pakets_section {
+    padding: 2em 0;
+
+        .pakets_title {
+            h4 {
+                font-size: 35px;
+            }
+        }
+
+        .row {
+            .pakets {
+                .text_center {
+                    .excerpt {
+                        font-size: 14px;
+                    }
+
+                    .pricing_text {
+                        margin-bottom: 1.5rem;
+
+                        li {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    a {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .pakets_section {
+        .pakets_title {
+            h4 {
+                font-size: 30px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .pakets_section {
+        .pakets_title {
+            margin-bottom: 10px;
+
+            h4 {
+                font-size: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,206 @@
+.portfolio_hero {
+    padding: 40px 0;
+
+    .row {
+        align-items: flex-start;
+
+        .portfolio_content {
+            padding: 30px 0;
+            
+            h2 {
+                font-size: 60px;
+                line-height: 80px;
+                font-weight: 600;
+                color: #344955;
+            }
+
+            p {
+                font-size: 30px;
+                line-height: 45px;
+                margin: 20px 0 20px;
+                color: #584f4f;
+            }
+
+            .select_filter {
+                width: 50%;
+                position: relative;
+                display: flex;
+                height: 3em;
+                line-height: 3;
+                border-radius: 6px;
+                border: 1px solid #ddd;
+                border-radius: .25em;
+                cursor: pointer;
+
+                &:hover .icon {
+                    color: #23b499;
+                }
+                .icon {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-radius: 6px;
+                    height: 3em;
+                    padding: 0 10px;
+                    color: #19191b;
+                    cursor: pointer;
+                    pointer-events: none;
+                    transition: .25s all ease;
+                }
+
+
+                select {
+                    font-size: 18px;
+                    appearance: none;
+                    letter-spacing: 2px;
+                    outline: 0;
+                    box-shadow: none;
+                    border: 0 !important;
+                    background-image: none;
+                    flex: 1;
+                    border-radius: 6px;
+                    padding: 10px;
+                    color: #19191b;
+                    cursor: pointer;
+                    font-size: 1em;
+
+                    &::-ms-expand {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .hero_portfolio_image {
+            border-radius: 5px;
+            height: 300px;
+
+            img {
+                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1200px) {
+    .portfolio_hero {
+        .row {
+            .portfolio_content {
+                h2 {
+                    font-size: 50px;
+                    line-height: 70px;
+                }
+
+                p {
+                    font-size: 25px;
+                    line-height: 35px;
+                    margin: 20px 0;
+                }
+
+            }
+
+            .hero_portfolio_image {
+                height: 250px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:992px) {
+    .portfolio_hero {
+        .row {
+            justify-content: center;
+            align-items: center;
+
+            .portfolio_content {
+                text-align: center;
+                padding: 10px 0;
+
+                p {
+                    font-size: 20px;
+                    line-height: 25px;
+                    margin: 10px 0 0 0;
+                }
+
+                .select_filter {
+                    width: 40%;
+                    margin: 25px auto;
+
+                    select {
+                        padding: 3px 10px;
+                        font-size: 16px;
+
+                    }
+                }
+            }
+
+            .hero_portfolio_image {
+                height: 300px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .portfolio_hero {
+
+        .row {
+            .portfolio_content {
+                h2 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+
+                .select_filter {
+                    width: 50%;
+                }
+            }
+
+            .hero_portfolio_image {
+                height: 300px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:576px) {
+    .portfolio_hero {
+        padding: 10px 0;
+
+        .row {
+            .portfolio_content {
+                h2 {
+                    font-size: 30px;
+                    line-height: 45px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+
+                .select_filter {
+                    width: 200px;
+                }
+            }
+
+            .hero_portfolio_image {
+                height: 230px;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+}

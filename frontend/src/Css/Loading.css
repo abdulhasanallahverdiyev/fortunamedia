@@ -1,0 +1,38 @@
+.loading {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading h1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ED7F1E;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    animation: play 2s ease infinite;
+
+}
+
+@keyframes play {
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        box-shadow: 0 0 0 5px #ed7f1e77;
+    }
+    25% {
+        box-shadow: 0 0 0 10px rgb(237, 127, 30,), 0 0 0 20px rgba(237, 127, 30, 0.452);
+    }
+    25% {
+        box-shadow: 0 0 0 10px rgb(237, 127, 30,), 0 0 0 20px rgba(237, 127, 30, 0.452);
+
+    }
+}
